@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content = "IE=edge">
+<meta name = "viewport" content="width=divice-width, initial-scale=1.0">
+<link rel="stylesheet" href="common.css">
+<style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+            margin: 0;
+            padding:50px ,0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: inline-block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+</style>
+</head>
+<body>
+<section >
+<div class="navbar">
+    <ul>
+		<li><a href ="upi1.html" >Home</a></li>
+		<li><a href ="intro.html" >Introduction</a></li>
+		<li><a href ="abstract.html" >Abstract</a></li>
+		<li><a href ="Questionnaire.html" >Questionnaire</a></li>
+		<li><a href ="surveydata.html" >Survey Data</a></li>
+		<li><a href ="inference.html" >Inference</a></li>
+		<li><a href ="activity.html" >Activity Log</a></li>
+		<li><a href ="conclusion.html" >Conclusion</a></li>
+        <li><a href ="pics.html" >Survey Pictures</a></li>	
+        <li><a href ="upi1.html" >About</a></li>		
+	</ul> 
+</div>
+</section>
+ <div class="container">
+        <h2>Survey Questionnaire</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">What is your Name?</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">What is your Age?</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="address">What is your Resident Address?</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">What is your Mobile Number?</label>
+                <input type="text" id="mobile" name="mobile" required>
+            </div>
+            <div class="form-group">
+                <label>Are you using UPI Payments?</label><br>
+                <input type="radio" id="upi_yes" name="upi" value="yes" required>
+                <label for="upi_yes">Yes</label>
+                <input type="radio" id="upi_no" name="upi" value="no">
+                <label for="upi_no">No</label>
+            </div>
+            <div class="form-group">
+                <label for="upi_app">Which UPI App are you using?</label>
+                <select id="upi_app" name="upi_app">
+                    <option value="">Select</option>
+                    <option value="Google Pay">Google Pay</option>
+                    <option value="PhonePe">PhonePe</option>
+                    <option value="Paytm">Paytm</option>
+                    <option value="BHIM">BHIM</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
